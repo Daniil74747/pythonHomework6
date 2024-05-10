@@ -27,10 +27,10 @@ try:
         print(num1 * num2)
 except TypeError as error:
     print(-1, error)
-
 if a == '/':
     try:
         print(num1 / num2)
     except (ZeroDivisionError, TypeError) as error:
         print(-1, error)
-
+    finally:
+        print('Error')
